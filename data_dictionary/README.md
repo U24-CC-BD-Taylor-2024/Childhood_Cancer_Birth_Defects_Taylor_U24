@@ -8,9 +8,9 @@ This data dictionary contains descriptions about data sets that have been added 
 
 ## Data from large scale Kids Firsts cohorts
 
-Congenital Heart Defects; KF-CHD (697 probands)
-Neuroblastoma; KF-NBL (460 probands)
-Recessive Structural Birth Defects; KF-SBD  (193 probands)
-Genetics at the Intersection of Childhood Cancer and Birth Defects; KF-GNINT (1,279 probands )
-MMC – (38 probands)
-TALL – (1,310 probands)
+Congenital Heart Defects; KF-CHD (697 probands)  
+Neuroblastoma; KF-NBL (460 probands)  
+Recessive Structural Birth Defects; KF-SBD  (193 probands)  
+Genetics at the Intersection of Childhood Cancer and Birth Defects; KF-GNINT (1,279 probands)  
+MMC – (38 probands)  
+TALL – (1,310 probands)  
