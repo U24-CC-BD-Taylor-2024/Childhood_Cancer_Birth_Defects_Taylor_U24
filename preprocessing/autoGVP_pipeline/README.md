@@ -1,5 +1,5 @@
 # AutoGVP pipeline steps
-Scripts for running autoGVP and the pre processing steps
+Steps for running autoGVP and its preprocessing modules
 
 # Clone repo
 Autogvp — https://github.com/diskin-lab-chop/AutoGVP?tab=readme-ov-file
