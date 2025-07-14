@@ -5,7 +5,7 @@ This data dictionary contains descriptions about data sets that have been added 
 ## MTP Expression data
 
 ### Schema
-
+![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/Screenshot%202025-07-14%20at%2011.11.14%20AM.png)
 ### Cypher Queries
 ```
 # Query to generate schema figure
@@ -16,7 +16,7 @@ MATCH (c1)-[:tumor_expression]-(c4:Concept)-[:CODE]-(co4:Code {SAB:'EXPBINS'})
 RETURN * limit 1
 ```
 ### Data Preprocessing scripts
-
+[MTPEXP script](preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 ## -------------------------------
 ## MTP Variant data
 
