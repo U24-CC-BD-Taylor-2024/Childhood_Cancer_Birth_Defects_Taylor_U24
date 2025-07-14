@@ -20,7 +20,7 @@ MATCH (c1)-[:tumor_expression]-(c4:Concept)-[:CODE]-(co4:Code {SAB:'EXPBINS'})
 RETURN * limit 1
 ```
 ### Data Preprocessing scripts
-![MTPEXP preprocessing script]([preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb))
+![MTPEXP preprocessing script](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 
 
 ## -------------------------------
