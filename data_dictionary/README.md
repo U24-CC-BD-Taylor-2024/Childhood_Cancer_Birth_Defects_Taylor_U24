@@ -4,9 +4,22 @@ This data dictionary contains descriptions about data sets that have been added 
 
 ## MTP Expression data
 
+### Schema
+
+### Cypher Queries
+```
+MATCH (co1:Code {SAB:'MTPEXP'})-[:CODE]-(c1:Concept)-[:gene]-(c2:Concept)-[:CODE]-(co2:Code {SAB:'ENSEMBL'})-[]-(t1:Term) 
+WHERE co1.CodeID CONTAINS 'Neuroblastoma'
+MATCH (c1)-[:disease]-(c3:Concept)-[:CODE]-(co3:Code {SAB: 'MONDO'})-[:PT]-(t2:Term)
+MATCH (c1)-[:tumor_expression]-(c4:Concept)-[:CODE]-(co4:Code {SAB:'EXPBINS'})
+RETURN * limit 1
+```
+### Data Preprocessing scripts
+
+## -------------------------------
 ## MTP Variant data
 
-## Data from large scale Kids Firsts cohorts
+## Data from large scale Kids Firsts cohorts (processed through AutoGVP)
 
 Congenital Heart Defects; KF-CHD (697 probands)  
 Neuroblastoma; KF-NBL (460 probands)  
@@ -14,3 +27,5 @@ Recessive Structural Birth Defects; KF-SBD  (193 probands)
 Genetics at the Intersection of Childhood Cancer and Birth Defects; KF-GNINT (1,279 probands)  
 MMC – (38 probands)  
 TALL – (1,310 probands)  
+
+## Somatic Datasets
