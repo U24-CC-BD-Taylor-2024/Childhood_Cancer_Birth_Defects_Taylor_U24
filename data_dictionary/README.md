@@ -8,6 +8,7 @@ This data dictionary contains descriptions about data sets that have been added 
 
 ### Cypher Queries
 ```
+# Query to generate schema figure
 MATCH (co1:Code {SAB:'MTPEXP'})-[:CODE]-(c1:Concept)-[:gene]-(c2:Concept)-[:CODE]-(co2:Code {SAB:'ENSEMBL'})-[]-(t1:Term) 
 WHERE co1.CodeID CONTAINS 'Neuroblastoma'
 MATCH (c1)-[:disease]-(c3:Concept)-[:CODE]-(co3:Code {SAB: 'MONDO'})-[:PT]-(t2:Term)
