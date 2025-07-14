@@ -22,9 +22,8 @@ RETURN * limit 1
 ### Data Preprocessing scripts
 [MTPEXP preprocessing script](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 
-
-## -------------------------------
-
+  
+  
 ## MTP Variant data
 
 ## Data from large scale Kids Firsts cohorts (processed through AutoGVP)
