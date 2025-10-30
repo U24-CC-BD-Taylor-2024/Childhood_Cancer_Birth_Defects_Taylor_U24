@@ -1,11 +1,11 @@
 # Data Dictionary for the Childhood Cancer and Structural Birth Defects U24 project
-This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG). Descriptions about data sets in the Data Distillery graph can be found in the Data Distillerys data dictionary
+This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG), which can be found [here](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md). Descriptions about data sets in the Data Distillery graph can be found in the Data Distillerys data dictionary
 
 
 ## Somatic Datasets
 
 ### Description
-`...`
+Somatic variants from three  cohorts have been ingested into the graph, including KF-NBL, KF-TALL and CBTN
 ### Schema 
 `...`
 ### Cypher Queries 
