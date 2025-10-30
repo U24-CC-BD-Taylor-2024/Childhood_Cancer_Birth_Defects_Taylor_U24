@@ -1,7 +1,25 @@
 # Data Dictionary for the Childhood Cancer and Structural Birth Defects U24 project
-This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph. Descriptions about data sets in the Data Distillery graph can be found in the Data Distillerys data dictionary
+This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG). Descriptions about data sets in the Data Distillery graph can be found in the Data Distillerys data dictionary
 
 
+## Somatic Datasets
+
+### Description
+`...`
+### Schema 
+`...`
+### Cypher Queries 
+`...`
+
+
+## Germline Datasets
+
+### Description
+`...`
+### Schema 
+`...`
+### Cypher Queries 
+`...`
 ## MTP Expression data
 
 ### Description
@@ -23,11 +41,6 @@ RETURN * limit 1
 [MTPEXP preprocessing script](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 
 
-  
-## MTP Variant data
-
-`...`
-
 ## Data from large scale Kids Firsts cohorts (processed through AutoGVP)
 
 Congenital Heart Defects; KF-CHD (697 probands)  
@@ -37,4 +50,7 @@ Genetics at the Intersection of Childhood Cancer and Birth Defects; KF-GNINT (1,
 MMC – (38 probands)  
 TALL – (1,310 probands)  
 
-## Somatic Datasets
+
+
+
+
