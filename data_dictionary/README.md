@@ -10,8 +10,15 @@ Somatic variants from three cohorts have been ingested into the graph, including
 
 ### Schema 
 `...`
-### Cypher Queries 
-`...`
+### Cypher Query
+```cypher
+match (hgvsg:Code {SAB:'HGVSG'})-[:HAS_CODE]-(n:Concept)-[r {SAB:"KFSOMNBL"}]-(m:Concept)-[:HAS_CODE]-(hsclo:Code {SAB:'HSCLO'})  
+match (n)-[r2:belongs_to_cohort]-(o:Concept)-[:HAS_CODE]-(cohort:Code {SAB:"KFCOHORT"})
+match (o)-[r5]-(s:Concept)-[:HAS_CODE]-(kfstudy:Code {SAB:"KFSTUDY"})
+match (n)-[r3:related_to_gene]-(p:Concept)-[:HAS_CODE]-(gene:Code {SAB:"ENSEMBL"})
+match (n)-[r4:has_protein]-(q:Concept)-[:HAS_CODE]-(protein:Code {SAB:"ENSEMBL"})
+return * LIMIT 1
+```
 
 
 ## Germline Datasets
