@@ -27,8 +27,19 @@ return * LIMIT 1
 `...`
 ### Schema 
 `...`
-### Cypher Queries 
-`...`
+### Cypher Query
+```cypher
+with 'KFGLCHD' as sab
+match (var:Code {SAB:'HGVSG'})-[:HAS_CODE]-(var_cui:Concept)-[r:cohort_has_variant {SAB:sab}]-(c2:Concept)-[:HAS_CODE]-(co:Code)
+match  (var_cui)-[:gene_has_variant {SAB:sab}]-(c3:Concept)-[:HAS_CODE]-(gene:Code) 
+match (var_cui)-[:has_population_frequency {SAB:sab}]-(c4:Concept)-[:HAS_CODE]-(co4:Code)
+match (var_cui)-[:transcript_has_variant_impact_vep {SAB:sab}]-(c5:Concept)-[:HAS_CODE]-(co5:Code)
+match (var_cui)-[:transcript_has_variant_impact_autogvp {SAB:sab}]-(c6:Concept)-[:HAS_CODE]-(co6:Code)
+match (var_cui)-[:transcript_has_variant_impact_polyphen {SAB:sab}]-(c7:Concept)-[:HAS_CODE]-(co7:Code)
+match (var_cui)-[:transcript_has_variant_impact_sift {SAB:sab}]-(c8:Concept)-[:HAS_CODE]-(co8:Code)
+//match (var_cui)-[s]-(c9:Concept)-[:HAS_CODE]-(co9:Code {SAB: 'HSCLO'})
+return * LIMIT 1
+```
 ## MTP Expression data
 
 ### Description
