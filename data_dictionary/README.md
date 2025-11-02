@@ -24,7 +24,19 @@ match (var_cui)-[:transcript_has_variant_impact_sift {SAB:sab}]-(c8:Concept)-[:H
 return * LIMIT 1
 ```
 
+#### Node Counts
+| SAB |  Count | 
+| :------- | :------: | 
+| Cell 1A  | Cell 2A  | 
+| Cell 1B  | Cell 2B  | 
 
+#### Edge Counts
+| Subject SAB |Predicate |Object SAB | KF-NBL Count |  KF-TALL Count | CBTN Count |
+|----------|----------|----------|------------------|----------------|------------|
+| HGVSG | belongs_to_cohort | KFCOHORT |           |                |            |
+| HGVSG | has_protein | ENSEMBL        |           |                |            |
+
+--------------------------------------------------------
 
 ## Somatic Datasets
 
@@ -43,27 +55,26 @@ match (n)-[r4:has_protein]-(q:Concept)-[:HAS_CODE]-(protein:Code {SAB:"ENSEMBL"}
 return * LIMIT 1
 ```
 
-#### KF-NBL (Neuroblastoma) Node Counts
-| SAB |  Count | 
-| :------- | :------: | 
-| Cell 1A  | Cell 2A  | 
-| Cell 1B  | Cell 2B  | 
+#### Node Counts
+| SAB | KF-NBL Count |  KF-TALL Count | CBTN Count |
+| :------- | :------: |  :------:     |  :------:  |
+| Variant  | Cell 2A  |              |            |
+| Gene     |          |              |            |
+| Protein  | Cell 2B  |             |              |
+| Cohort   |          |             |              |
+| Study    |          |             |             |
 
-#### KF-NBL (Neuroblastoma) Node Counts
-
-| Subject SAB |Predicate |Object SAB | Count |
-|----------|----------|----------|----------|
-| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 | Row 1 Col 4 |
-| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 | Row 2 Col 4 |
-| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 | Row 2 Col 4 |
-| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 | Row 2 Col 4 |
-
-### KF-TALL (T-cell Acute Lymphoblastic Leukemia)
-
-### CBTN ()
-
+#### Edge Counts
+| Subject SAB |Predicate |Object SAB | KF-NBL Count |  KF-TALL Count | CBTN Count |
+|----------|----------|----------|------------------|----------------|------------|
+| HGVSG | belongs_to_cohort | KFCOHORT |           |                |            |
+| HGVSG | has_protein | ENSEMBL        |           |                |            |
+| HGVSG | related_to_gene| ENSEMBL     |           |               |             |
+| HGVSG | has_location | HSCLO         |           |               |             |             
+| KFCOHORT | cohort_has_study |  KFSTUDY |         |               |             |
 
 
+--------------------------------------------------------
 ## MTP Expression data
 
 ### Description
