@@ -26,7 +26,7 @@ return * LIMIT 1
 ### Description
 `...`
 ### Schema 
-`...`
+![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/)
 ### Cypher Query
 ```cypher
 with 'KFGLCHD' as sab
