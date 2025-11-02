@@ -3,6 +3,29 @@ This data dictionary contains descriptions about data sets that have been added 
 
 
 
+
+## Germline Datasets
+
+### Description
+Germline variants from six WES/WGS cohorts have been ingested in the graph. 
+### Schema 
+![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
+### Cypher Query
+```cypher
+with 'KFGLCHD' as sab
+match (var:Code {SAB:'HGVSG'})-[:HAS_CODE]-(var_cui:Concept)-[r:cohort_has_variant {SAB:sab}]-(c2:Concept)-[:HAS_CODE]-(co:Code)
+match  (var_cui)-[:gene_has_variant {SAB:sab}]-(c3:Concept)-[:HAS_CODE]-(gene:Code) 
+match (var_cui)-[:has_population_frequency {SAB:sab}]-(c4:Concept)-[:HAS_CODE]-(co4:Code)
+match (var_cui)-[:transcript_has_variant_impact_vep {SAB:sab}]-(c5:Concept)-[:HAS_CODE]-(co5:Code)
+match (var_cui)-[:transcript_has_variant_impact_autogvp {SAB:sab}]-(c6:Concept)-[:HAS_CODE]-(co6:Code)
+match (var_cui)-[:transcript_has_variant_impact_polyphen {SAB:sab}]-(c7:Concept)-[:HAS_CODE]-(co7:Code)
+match (var_cui)-[:transcript_has_variant_impact_sift {SAB:sab}]-(c8:Concept)-[:HAS_CODE]-(co8:Code)
+//match (var_cui)-[s]-(c9:Concept)-[:HAS_CODE]-(co9:Code {SAB: 'HSCLO'})
+return * LIMIT 1
+```
+
+
+
 ## Somatic Datasets
 
 ### Description
@@ -20,26 +43,27 @@ match (n)-[r4:has_protein]-(q:Concept)-[:HAS_CODE]-(protein:Code {SAB:"ENSEMBL"}
 return * LIMIT 1
 ```
 
+#### KF-NBL (Neuroblastoma) Node Counts
+| SAB |  Count | 
+| :------- | :------: | 
+| Cell 1A  | Cell 2A  | 
+| Cell 1B  | Cell 2B  | 
 
-## Germline Datasets
+#### KF-NBL (Neuroblastoma) Node Counts
 
-### Description
-`...`
-### Schema 
-![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
-### Cypher Query
-```cypher
-with 'KFGLCHD' as sab
-match (var:Code {SAB:'HGVSG'})-[:HAS_CODE]-(var_cui:Concept)-[r:cohort_has_variant {SAB:sab}]-(c2:Concept)-[:HAS_CODE]-(co:Code)
-match  (var_cui)-[:gene_has_variant {SAB:sab}]-(c3:Concept)-[:HAS_CODE]-(gene:Code) 
-match (var_cui)-[:has_population_frequency {SAB:sab}]-(c4:Concept)-[:HAS_CODE]-(co4:Code)
-match (var_cui)-[:transcript_has_variant_impact_vep {SAB:sab}]-(c5:Concept)-[:HAS_CODE]-(co5:Code)
-match (var_cui)-[:transcript_has_variant_impact_autogvp {SAB:sab}]-(c6:Concept)-[:HAS_CODE]-(co6:Code)
-match (var_cui)-[:transcript_has_variant_impact_polyphen {SAB:sab}]-(c7:Concept)-[:HAS_CODE]-(co7:Code)
-match (var_cui)-[:transcript_has_variant_impact_sift {SAB:sab}]-(c8:Concept)-[:HAS_CODE]-(co8:Code)
-//match (var_cui)-[s]-(c9:Concept)-[:HAS_CODE]-(co9:Code {SAB: 'HSCLO'})
-return * LIMIT 1
-```
+| Subject SAB |Predicate |Object SAB | Count |
+|----------|----------|----------|----------|
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 | Row 1 Col 4 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 | Row 2 Col 4 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 | Row 2 Col 4 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 | Row 2 Col 4 |
+
+### KF-TALL (T-cell Acute Lymphoblastic Leukemia)
+
+### CBTN ()
+
+
+
 ## MTP Expression data
 
 ### Description
