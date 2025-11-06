@@ -25,18 +25,30 @@ return * LIMIT 1
 ```
 
 #### Node Counts
-| SAB |  Count | 
-| :------- | :------: | 
-| Cell 1A  | Cell 2A  | 
-| Cell 1B  | Cell 2B  | 
+| Entity               | Node SAB   |   KFGLCHD |   KFGLNBL |   KFGLTALL |   KFGLGNINT |   KFGLRSBD |   KFGLMMC |
+|:---------------------|:-----------|----------:|----------:|-----------:|------------:|-----------:|----------:|
+| Variant              | HGVSG      |      2084 |      4232 |       5478 |        4323 |        827 |       137 |
+| Cohort               | COHORT     |         1 |         1 |          1 |           1 |          1 |         1 |
+| Gene                 | ENSEMBL    |      1359 |      1900 |       2563 |        2166 |        641 |       123 |
+| Transcript           | ENSEMBL    |      1359 |      1899 |       2563 |        2168 |        641 |       123 |
+| Population           | POPULATION |         7 |         7 |          7 |           7 |          7 |         7 |
+| Chromosomal Location | HSCLO      |      2084 |      4232 |       5478 |        4323 |        827 |       137 |
+---------------
 
 #### Edge Counts
-| Subject SAB |Predicate |Object SAB | KF-NBL Count |  KF-TALL Count | CBTN Count |
-|----------|----------|----------|------------------|----------------|------------|
-| HGVSG | belongs_to_cohort | KFCOHORT |           |                |            |
-| HGVSG | has_protein | ENSEMBL        |           |                |            |
+| Subject SAB   | Predicate                              | Object SAB   |   KFGLCHD |   KFGLNBL |   KFGLTALL |   KFGLGNINT |   KFGLRSBD |   KFGLMMC |
+|:--------------|:---------------------------------------|:-------------|----------:|----------:|-----------:|------------:|-----------:|----------:|
+| COHORT        | cohort_has_variant                     | HGVSG        |      2084 |      4232 |       5478 |        4323 |        827 |       137 |
+| ENSEMBL       | gene_has_variant                       | HGVSG        |     13813 |     27052 |      35716 |       28906 |       5380 |       921 |
+| POPULATION    | has_population_frequency               | HGVSG        |      8638 |      6706 |      18207 |       17689 |       2247 |       539 |
+| HGVSG         | transcript_has_variant_impact_autogvp  | ENSEMBL      |      2084 |      4235 |       5478 |        4323 |        827 |       137 |
+| HGVSG         | transcript_has_variant_impact_polyphen | ENSEMBL      |       677 |       584 |       1458 |        1439 |        305 |        55 |
+| HGVSG         | transcript_has_variant_impact_sift     | ENSEMBL      |       672 |       578 |       1446 |        1430 |        301 |        55 |
+| HGVSG         | transcript_has_variant_impact_vep      | ENSEMBL      |      2084 |      4231 |       5478 |        4323 |        827 |       137 |
+----------------------------
 
---------------------------------------------------------
+
+
 
 ## Somatic Datasets
 
