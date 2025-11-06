@@ -10,6 +10,7 @@ This data dictionary contains descriptions about data sets that have been added 
 Germline variants from six WES/WGS cohorts have been ingested in the graph. 
 ### Schema 
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
+
 ### Cypher Query
 ```cypher
 with 'KFGLCHD' as sab
@@ -56,7 +57,9 @@ return * LIMIT 1
 Somatic variants from three cohorts have been ingested into the graph, including KF-NBL, KF-TALL and CBTN.
 
 ### Schema 
-`...`
+
+![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-06%20at%201.06.08%20PM.png)
+
 ### Cypher Query
 ```cypher
 match (hgvsg:Code {SAB:'HGVSG'})-[:HAS_CODE]-(n:Concept)-[r {SAB:"KFSOMNBL"}]-(m:Concept)-[:HAS_CODE]-(hsclo:Code {SAB:'HSCLO'})  
