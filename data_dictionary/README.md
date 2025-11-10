@@ -119,6 +119,12 @@ RETURN * limit 1
 
 #### Edge Counts
 
+| Subject SAB   | Predicate         | Object SAB   |   MTPEXP |
+|:--------------|:------------------|:-------------|---------:|
+| MTPEXP        | related_to_gene   | ENSEMBL      |  1064061 |
+| MTPEXP        | belongs_to_cohort | KFCOHORT     |  3424928 |
+| MTPEXP        | has_location      | HSCLO        |   579887 |
+-------------
 ### Data Preprocessing scripts
 [MTPEXP preprocessing script](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 
