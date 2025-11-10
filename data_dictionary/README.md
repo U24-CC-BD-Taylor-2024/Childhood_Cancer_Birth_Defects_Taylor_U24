@@ -107,6 +107,18 @@ MATCH (c1)-[:disease]-(c3:Concept)-[:CODE]-(co3:Code {SAB: 'MONDO'})-[:PT]-(t2:T
 MATCH (c1)-[:tumor_expression]-(c4:Concept)-[:CODE]-(co4:Code {SAB:'EXPBINS'})
 RETURN * limit 1
 ```
+
+#### Node Counts
+| Entity          | Node SAB   |   MTPEXP |
+|:----------------|:-----------|---------:|
+| MTP Expression  | MTPEXP     |  1064061 |
+| Gene            | ENSEMBL    |    50635 |
+| Disease         | MONDO      |       84 |
+| Expression Bins | EXPBINS    |       18 |
+-------------------------------------------
+
+#### Edge Counts
+
 ### Data Preprocessing scripts
 [MTPEXP preprocessing script](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 
