@@ -71,22 +71,22 @@ return * LIMIT 1
 ```
 
 #### Node Counts
-| SAB | KF-NBL Count |  KF-TALL Count | CBTN Count |
-| :------- | :------: |  :------:     |  :------:  |
-| Variant  | Cell 2A  |              |            |
-| Gene     |          |              |            |
-| Protein  | Cell 2B  |             |              |
-| Cohort   |          |             |              |
-| Study    |          |             |             |
+| Entity               | Node SAB   |   KFSOMNBL |   KFSOMTALL |   KFSOMCBTN |
+|:---------------------|:-----------|-----------:|------------:|------------:|
+| Variant              | HGVSG      |       1591 |       13250 |        8655 |
+| Gene                 | ENSEMBL    |       1508 |        7300 |        6028 |
+| Cohort               | KFCOHORT   |          1 |           1 |           1 |
+| Study                | KFSTUDY    |          1 |           1 |           1 |
+| Chromosomal Location | HSCLO      |       1591 |       13250 |        8655 |
 
 #### Edge Counts
-| Subject SAB |Predicate |Object SAB | KF-NBL Count |  KF-TALL Count | CBTN Count |
-|----------|----------|----------|------------------|----------------|------------|
-| HGVSG | belongs_to_cohort | KFCOHORT |           |                |            |
-| HGVSG | has_protein | ENSEMBL        |           |                |            |
-| HGVSG | related_to_gene| ENSEMBL     |           |               |             |
-| HGVSG | has_location | HSCLO         |           |               |             |             
-| KFCOHORT | cohort_has_study |  KFSTUDY |         |               |             |
+
+| Subject SAB   | Predicate         | Object SAB   |   KFSOMNBL |   KFSOMTALL |   KFSOMCBTN |
+|:--------------|:------------------|:-------------|-----------:|------------:|------------:|
+| HGVSG         | related_to_gene   | ENSEMBL      |       1619 |       13253 |        8657 |
+| HGVSG         | belongs_to_cohort | KFCOHORT     |          1 |           1 |           1 |
+| HGVSG         | has_location      | HSCLO        |       2103 |       14477 |       10871 |
+| KFCOHORT      | study_has_cohort  | KFSTUDY      |          1 |           1 |           1 |
 
 
 --------------------------------------------------------
