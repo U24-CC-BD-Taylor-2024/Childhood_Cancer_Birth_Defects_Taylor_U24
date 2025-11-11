@@ -1,5 +1,9 @@
 # Data Dictionary for the Childhood Cancer and Structural Birth Defects datasets
-This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG), which can be found [here](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md). We have 4 sets of data that we've added on top of the DDKG: `Germline variants`, `Somatic variants`, `Molecular Targets Program (MTP) Tumor Expression data` and `single-cell data` (coming soon).
+This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG), which can be found [here](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md). We have 4 sets of data that we've added on top of the DDKG: 
+- `Germline variants`
+- `Somatic variants`
+- `Molecular Targets Program (MTP) Tumor Expression data`
+- `single-cell data` (coming soon).
 
 
 
