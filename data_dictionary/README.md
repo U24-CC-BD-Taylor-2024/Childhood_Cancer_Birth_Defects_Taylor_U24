@@ -8,13 +8,9 @@ This data dictionary contains descriptions about data sets that have been added 
 
 
 
-## Germline Datasets
+## Germline and Somatic Variants Datasets
 
-### Description
-Germline variants from six WES/WGS cohorts have been ingested in the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and include 
-
-
-#### Germline and Somatic Variant datasets summary
+### Germline and Somatic Variant datasets summary
 
 | Kids First Name | Kids First Code | dbGAP ID | Domain | Germline Variants | Somatic Variants |
 |-----------------|-----------------|----------|--------|------------------|------------------ |
@@ -25,6 +21,9 @@ Germline variants from six WES/WGS cohorts have been ingested in the graph. The 
 | Kids First: Whole Exome, Genome, and RNA Sequencing in Recessive Structural Brain Defects in Children | KF-RSBD | [phs002590](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002590.v2.p1) | Birth Defects | 827 | 0 |
 | Kids First: Germline and Somatic Variants in Myeloid Malignancies in Children | KF-MMC | [phs002187](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002187.v1.p1) | Cancer |137 | 0 |
 ----------------------------------------------------------
+
+### Germline Variants Description
+Germline variants from six WES/WGS cohorts have been ingested in the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and are depicted in the table above, along with the total number of germline vs somatic variants that have been ingested.
 
 ### Schema 
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
