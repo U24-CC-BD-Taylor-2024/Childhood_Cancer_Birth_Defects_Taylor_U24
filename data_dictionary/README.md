@@ -1,5 +1,5 @@
 # Data Dictionary for the Childhood Cancer and Structural Birth Defects datasets
-This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG), which can be found [here](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md). We have 4 sets of data that we've added on top of the DDKG: Germline variants, Somatic variants, Molecular Targets Program (MTP) Tumor Expression data single-cell data (coming soon).
+This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG), which can be found [here](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md). We have 4 sets of data that we've added on top of the DDKG: `Germline variants`, `Somatic variants`, `Molecular Targets Program (MTP) Tumor Expression data` and `single-cell data` (coming soon).
 
 
 
@@ -8,6 +8,20 @@ This data dictionary contains descriptions about data sets that have been added 
 
 ### Description
 Germline variants from six WES/WGS cohorts have been ingested in the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and include 
+
+
+#### Germline and Somatic Variant datasets summary
+
+| Kids First Name | Kids First Code | dbGAP ID | Domain | Germline Variants | Somatic Variants |
+|-----------------|-----------------|----------|--------|------------------|------------------ |
+| Comprehensive Genomic Profiling to Improve Prediction of Clinical Outcome for Children with T-cell Acute Lymphoblastic Leukemia | KF-TALL | [phs002276](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002276.v4.p1) | Cancer | 5478 | 13250 |
+| Kids First: Genetics at the Intersection of Childhood Cancer and Birth Defects | KF-GNINT | [phs001846](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001846.v1.p1) | Cancer & Birth Defects | 4323 | 0 |
+| National Heart, Lung, and Blood Institute (NHLBI) Bench to Bassinet Program: The Gabriella Miller Kids First Pediatric Research Program of the Pediatric Cardiac Genetics Consortium (PCGC) | KF-CHD | [phs001138](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001138.v4.p2) | Birth Defects | 2084 | 0 |
+| Discovering the Genetic Basis of Human Neuroblastoma: A Gabriella Miller Kids First Pediatric Research Program (Kids First) Project | KF-NBL | [phs001436](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001436.v1.p1) | Cancer | 4232 | 1591 |
+| Kids First: Whole Exome, Genome, and RNA Sequencing in Recessive Structural Brain Defects in Children | KF-RSBD | [phs002590](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002590.v2.p1) | Birth Defects | 827 | 0 |
+| Kids First: Germline and Somatic Variants in Myeloid Malignancies in Children | KF-MMC | [phs002187](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002187.v1.p1) | Cancer |137 | 0 |
+----------------------------------------------------------
+
 ### Schema 
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
 
@@ -24,18 +38,6 @@ match (var_cui)-[:transcript_has_variant_impact_sift {SAB:sab}]-(c8:Concept)-[:H
 //match (var_cui)-[s]-(c9:Concept)-[:HAS_CODE]-(co9:Code {SAB: 'HSCLO'})
 return * LIMIT 1
 ```
-
-#### Germline and Somatic Variant datasets summary
-
-| Kids First Name | Kids First Code | dbGAP ID | Domain | 
-|-----------------|-----------------|----------|--------|
-|
-| Discovering the Genetic Basis of Human Neuroblastoma: A Gabriella Miller Kids First Pediatric Research Program (Kids First) Project | KF-NBL | | Cancer |
-| Children's Brain Tumor Network | CBTN | | Cancer |
-| Kids First: Whole Exome, Genome, and RNA Sequencing in Recessive Structural Brain Defects in Children | KF-RSBD | [phs001436](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001436.v1.p1)| Birth Defects | 
-----------------------------------------------------------
-
-
 
 #### Node Counts
 | Entity               | Node SAB   |   KFGLCHD |   KFGLNBL |   KFGLTALL |   KFGLGNINT |   KFGLRSBD |   KFGLMMC |
