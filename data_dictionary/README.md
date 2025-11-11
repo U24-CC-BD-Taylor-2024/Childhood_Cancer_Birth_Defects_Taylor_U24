@@ -23,7 +23,7 @@ This data dictionary contains descriptions about data sets that have been added 
 ----------------------------------------------------------
 
 ### Germline Variants Description
-Germline variants from six WES/WGS cohorts have been ingested in the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and are depicted in the table above, along with the total number of germline vs somatic variants that have been ingested.
+Germline variants from 6 WES/WGS cohorts have been ingested in the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and are depicted in the table above, along with the total number of germline vs somatic variants that have been ingested.
 
 ### Schema 
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
