@@ -31,7 +31,7 @@ This data dictionary contains descriptions about data sets that have been added 
 | Purpose |     Including germline variants in a graph database allows you to represent complex relationships between patients, variants, genes, and biological pathways in a way that supports flexible, multi-hop querying. By integrating variant data from pediatric cancer and congenital defect cohorts, the graph structure enables discovery of shared genetic architecture across disorders. It makes it possible to identify variants that connect to common genes, pathways, or functional annotations that may underlie both cancer susceptibility and developmental abnormalities. The graph format also supports advanced algorithms—such as link prediction, community detection, and GNN-based inference—that can highlight pleiotropic or convergent risk loci. Ultimately, this structure accelerates the identification of germline variants that may be causal or contributory to both childhood cancers and structural birth defects.        |
 | Schema Organization | All of the germline datasets follow the exact same simple schema. Variants, with HGVSG identifiers, are connected to Cohort nodes, which define what cohort they belong to, Gene nodes, and Transcript nodes. Variants are also attached to their corresponding Population nodes which identifies which demographic the variant is found in. A schema diagram showing the nodes and edges of the germline schema, along with the Cypher query used to generate the figure can be found below. | 
 | Website | https://kidsfirstdrc.org (dbGap study pages can be found in the dbGAP ID column of the Germline and Somatic Variant datasets summary table.) |
-------------------------
+---
 
 ### Schema 
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
@@ -78,6 +78,7 @@ return * LIMIT 1
 
 ## Somatic Datasets
 
+|   |   |
 |---|---|
 | Dataset SAB(s) | KFSOMNBL, KFSOMTALL, KFSOMCBTN |
 | Description |    Somatic variants from 3 WES/WGS cohorts have been ingested into the graph. Like the germline cohorts, the somatic variant cohorts come from the Gabriella Miller Kids First Data Portal. Only variants that were scored as HIGH from Ensembl's Variant Effect Predictor algorthim were included in the ingestion.  |
