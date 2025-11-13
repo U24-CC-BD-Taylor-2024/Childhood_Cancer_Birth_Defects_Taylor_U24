@@ -128,9 +128,9 @@ return * LIMIT 1
 |   |   |
 |---|---|
 | Dataset SAB(s) | MTPEXP |
-| Description |    |
+| Description |  We have computed the log2FC of gene expression in different tumor types relative to healthy gene expression. The tumor expression was compared to healthy tissue from The Genotype-Tissue Expression (GTEx) Portal.   |
 | Purpose |  Adding tumor gene expression levels to the graph—and comparing them to normal tissue expression—provides a functional layer of information that helps interpret both germline and somatic variants in context. Differential expression allows you to see which variant-bearing genes are actually dysregulated in tumors, strengthening evidence for their biological relevance. It also helps uncover pathway-level disruptions by showing whether groups of related genes are collectively over- or under-expressed in cancer compared to normal tissue. When linked in the graph, expression data can reveal multi-hop patterns such as germline variant → gene → tumor overexpression or somatic mutation → pathway → coordinated dysregulation. Ultimately, integrating tumor vs. normal expression enables more confident identification of driver mechanisms, potential biomarkers, and pleiotropic gene programs shared across disorders.   |
-| Schema Organization |  | 
+| Schema Organization | The central MTPEXP node is connected to a MONDO Disease node, an ENSEMBL Gene node and an Expression bin node, as shown in the figure below. | 
 | Website | https://ccr.cancer.gov/molecular-targets-program |
 ---
 
