@@ -76,7 +76,7 @@ return * LIMIT 1
 
 
 
-## Somatic Datasets
+## Somatic Variants Summary
 
 |   |   |
 |---|---|
@@ -124,9 +124,15 @@ return * LIMIT 1
 --------------------------------------------------------
 ## MTP Expression data
 
-### Description
-
-`...`
+### Molecular Targets Program data Summary
+|   |   |
+|---|---|
+| Dataset SAB(s) | MTPEXP |
+| Description |    |
+| Purpose |  Adding tumor gene expression levels to the graph—and comparing them to normal tissue expression—provides a functional layer of information that helps interpret both germline and somatic variants in context. Differential expression allows you to see which variant-bearing genes are actually dysregulated in tumors, strengthening evidence for their biological relevance. It also helps uncover pathway-level disruptions by showing whether groups of related genes are collectively over- or under-expressed in cancer compared to normal tissue. When linked in the graph, expression data can reveal multi-hop patterns such as germline variant → gene → tumor overexpression or somatic mutation → pathway → coordinated dysregulation. Ultimately, integrating tumor vs. normal expression enables more confident identification of driver mechanisms, potential biomarkers, and pleiotropic gene programs shared across disorders.   |
+| Schema Organization |  | 
+| Website | https://ccr.cancer.gov/molecular-targets-program |
+---
 
 ### Schema
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/Screenshot%202025-07-14%20at%2011.11.14%20AM.png)
