@@ -22,8 +22,16 @@ This data dictionary contains descriptions about data sets that have been added 
 | Kids First: Germline and Somatic Variants in Myeloid Malignancies in Children | KF-MMC | [phs002187](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002187.v1.p1) | Cancer |137 | 0 |
 ----------------------------------------------------------
 
-### Germline Variants Description
-Germline variants from 6 WES/WGS cohorts have been ingested in the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and are depicted in the table above, along with the total number of germline vs somatic variants that have been ingested.
+### Germline Variants Summary 
+
+|   |   |
+|---|---|
+| Dataset SAB(s) | KFGLCHD, KFGLNBL, KFGLTALL, KFGLGNINT, KFGLRSBD, KFGLMMC |
+| Description |    Germline variants from 6 WES/WGS cohorts have been ingested into the graph. The cohorts come from the Gabriella Miller Kids First Data Portal and additional details can be found in the table above, along with the total number of germline vs somatic variants that have been ingested. Only variants that were scored as HIGH from Ensembl's Variant Effect Predictor algorthim were included.  |
+| Purpose |     Including germline variants in a graph database allows you to represent complex relationships between patients, variants, genes, and biological pathways in a way that supports flexible, multi-hop querying. By integrating variant data from pediatric cancer and congenital defect cohorts, the graph structure enables discovery of shared genetic architecture across disorders. It makes it possible to identify variants that connect to common genes, pathways, or functional annotations that may underlie both cancer susceptibility and developmental abnormalities. The graph format also supports advanced algorithms—such as link prediction, community detection, and GNN-based inference—that can highlight pleiotropic or convergent risk loci. Ultimately, this structure accelerates the identification of germline variants that may be causal or contributory to both childhood cancers and structural birth defects.        |
+| Schema Organization | All of the germline datasets follow the exact same simple schema. Variants, with HGVSG identifiers, are connected to Cohort nodes, which define what cohort they belong to, Gene nodes, and Transcript nodes. Variants are also attached to their corresponding Population nodes which identifies which demographic the variant is found in. A schema diagram showing the nodes and edges of the germline schema, along with the Cypher query used to generate the figure can be found below. | 
+| Website | https://kidsfirstdrc.org (dbGap study pages can be found in the dbGAP ID column of the Germline and Somatic Variant datasets summary table.) |
+------------------------
 
 ### Schema 
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-02%20at%204.58.37%20PM.png)
@@ -70,8 +78,14 @@ return * LIMIT 1
 
 ## Somatic Datasets
 
-### Description
-Somatic variants from three cohorts have been ingested into the graph, including KF-NBL, KF-TALL and CBTN.
+|---|---|
+| Dataset SAB(s) | KFSOMNBL, KFSOMTALL, KFSOMCBTN |
+| Description |    Somatic variants from 3 WES/WGS cohorts have been ingested into the graph. Like the germline cohorts, the somatic variant cohorts come from the Gabriella Miller Kids First Data Portal. Only variants that were scored as HIGH from Ensembl's Variant Effect Predictor algorthim were included in the ingestion.  |
+| Purpose |    Including somatic variants in the graph database allows for capturing tumor-specific alterations and connecting them to the germline landscape, patients, genes, pathways, and clinical features. By integrating somatic data from the three cancer cohorts, we can uncover interactions between inherited risk and acquired mutations that may jointly drive pediatric tumor development. The graph structure supports identifying recurrent somatic events and shared mutational signatures across cancers and structural birth defects. It also facilitates multi-hop analyses linking somatic variants to functional pathways, therapeutic targets, or co-occurring germline variants that might reveal combined genetic mechanisms. Overall, incorporating somatic variants strengthens the ability to discover biologically meaningful relationships that differentiate or unify the cancer cohorts.        |
+| Schema Organization | Similar to the germline organiza, all of the somatic datasets follow the same schema. Variants, (again with HGVSG identifiers, are connected to Cohort nodes, which define what cohort they belong to, Gene nodes, and Transcript nodes. The somatic variants are also attached to their respective Protein nodes. A schema diagram showing the nodes and edges of the somatic schema, along with the Cypher query used to generate the figure can be found below. | 
+| Website | https://kidsfirstdrc.org (dbGap study pages can be found in the dbGAP ID column of the Germline and Somatic Variant datasets summary table.) |
+------------------------
+
 
 ### Schema 
 
