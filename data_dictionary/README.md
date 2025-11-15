@@ -12,7 +12,7 @@ This data dictionary contains descriptions about data sets that have been added 
 
 ### Germline and Somatic Variant datasets summary
 
-| Kids First Name | Kids First Code | dbGAP ID | Domain | Germline Variants | Somatic Variants |
+| Kids First Name | Kids First Code     | dbGAP ID | Domain | Germline Variants | Somatic Variants |
 |-----------------|-----------------|----------|--------|------------------|------------------ |
 | Comprehensive Genomic Profiling to Improve Prediction of Clinical Outcome for Children with T-cell Acute Lymphoblastic Leukemia | KF-TALL | [phs002276](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002276.v4.p1) | Cancer | 5478 | 13250 |
 | Kids First: Genetics at the Intersection of Childhood Cancer and Birth Defects | KF-GNINT | [phs001846](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001846.v1.p1) | Cancer & Birth Defects | 4323 | 0 |
