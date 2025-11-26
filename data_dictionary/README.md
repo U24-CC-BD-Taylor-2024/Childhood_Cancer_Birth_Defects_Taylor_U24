@@ -186,11 +186,31 @@ RETURN * limit 1
 ![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/)
 
 ### Cypher Query
+```
+MATCH (scexp:Code {SAB:'HDSCCEXP'})-[:HAS_CODE]-(c1:Concept)-[r:expressed_in {SAB:'HDSCCEXP'}]->(c2:Concept)-[:HAS_CODE]-(co2:Code {SAB:'HGNC'}) 
+MATCH (c1)-[r2:has_embedding]-(c3:Concept)-[:HAS_CODE]-(emcode:Code {SAB:'EMBREGIONS'})
+MATCH (c1)-[r3:has_expression]-(c4:Concept)-[:HAS_CODE]-(excode:Code  {SAB:'SCNORMBINS'})
+RETURN * limit 1
+```
 
 #### Node Counts
 
+| Entity                  | Node SAB   |    Count |
+|:------------------------|:-----------|---------:|
+| Single Cell Expression  | HDSCCEXP   | 41654519 |
+| Single Cell Normed Bins | SCNORMBINS |    10001 |
+| Embedding Region        | EMBREGIONS |    90601 |
+--------------------------------------------------
+
 #### Edge Counts
 
+
+| Subject SAB   | Predicate      | Object SAB   |    Count |
+|:--------------|:---------------|:-------------|---------:|
+| HDSCCEXP      | expressed_in   | HGNC         | 31754685 |
+| HDSCCEXP      | has_embedding  | EMBREGIONS   | 41654519 |
+| HDSCCEXP      | has_expression | SCNORMBINS   | 41654519 |
+------------------------------------------------------------
 
 
 
