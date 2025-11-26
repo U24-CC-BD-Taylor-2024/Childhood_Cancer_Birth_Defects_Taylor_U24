@@ -3,7 +3,7 @@ This data dictionary contains descriptions about data sets that have been added 
 - `Germline variants`  
 - `Somatic variants`  
 - `Molecular Targets Program (MTP) Tumor Expression data`  
-- `single-cell data` (coming soon)  
+- `Single-Cell data` 
 
 
 
