@@ -183,7 +183,7 @@ RETURN * limit 1
 
 ### Schema 
 
-![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/)
+![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/Screenshot%202025-11-26%20at%202.05.42%20PM.png)
 
 ### Cypher Query
 ```
