@@ -167,6 +167,35 @@ RETURN * limit 1
 [MTPEXP preprocessing script](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/preprocessing/MTP_expression/gene_counts_rsem_expected_count_collapsed_deseq.ipynb)
 
 
+
+-------------------------------
+## Single Cell data Summary
+
+|   |   |
+|---|---|
+| Dataset SAB(s)      | HDSCCEXP, SCNORMBINS, EMBREGIONS |
+| Description         |                                  |
+| Purpose             |                                  |
+| Schema Organization |                                  | 
+| Website             |                                  |
+----------------------------------------------------------
+
+
+### Schema 
+
+![](https://github.com/U24-CC-BD-Taylor-2024/Childhood_Cancer_Birth_Defects_Taylor_U24/blob/main/data_dictionary/images/)
+
+### Cypher Query
+
+#### Node Counts
+
+#### Edge Counts
+
+
+
+
+
+
 ## Data from large scale Kids Firsts cohorts (processed through AutoGVP)
 
 Congenital Heart Defects; KF-CHD (697 probands)  
