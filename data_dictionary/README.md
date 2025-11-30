@@ -174,10 +174,14 @@ RETURN * limit 1
 |   |   |
 |---|---|
 | Dataset SAB(s)      | HDSCCEXP, SCNORMBINS, EMBREGIONS |
-| Description         |                                  |
-| Purpose             |                                  |
-| Schema Organization |                                  | 
-| Website             |                                  |
+| Description         |    Human heart single-cell RNA-seq (scRNA-seq) gene
+expression data from four publicly available datasets ([Asp et al. 2019](https://pubmed.ncbi.nlm.nih.gov/31835037/), [Cao et al. 2020](https://pubmed.ncbi.nlm.nih.gov/33184181/), [Cui et al. 2019](https://pubmed.ncbi.nlm.nih.gov/30759401/), [Knight-Schrijver et al. 2022](https://pubmed.ncbi.nlm.nih.gov/36938497/)) have been ingested into the graph. The scRNA-seq data were generated across a series of human development stages including fetal 5-25 gestational weeks (GWs), fetal 6.5-1720 post-conception weeks (PCWs), and adult 55-75 years old. The scRNA-seq data were preprocessed using Seurat, and the fetal human heart cells in the dataset published by [Cao et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/33184181/) were used to build a reference dataset for [Azimuth](https://azimuth.hubmapconsortium.org) to annotate the cell types of other cells.                              |
+| Purpose             | Adding human heart scRNA-seq gene expression data to the graph characterizes the cell-type level gene expression changes in heart across different development stages, which enables the identification of key regulatory genes and pathways during heart development. The human heart gene expression data can also help identify molecular mechanisms underlying the associations between germline variants and congenital heart defects (CHDs), which can potentially facilitate the development of new therapeutic strategies for CHDs.                                  |
+| Schema Organization |  The central heart development scRNA-seq expression (HDSCCEXP) node is connected to an scRNA-seq normalized expression bin (SCNORMBINS) node, a UMAP (Uniform Manifold Approximation and Projection) embedding region (EMBREGIONS) node, and an HGNC gene node, as shown in the figure below.                        | 
+| Website             |      The website links to the ingested datasets were found in their corresponding papers, which are listed as following:<br> - [Asp M, Giacomello S, Larsson L, Wu C, Fürth D, Qian X, Wärdell E, Custodio J, Reimegård J, Salmén F, Österholm C. A spatiotemporal organ-wide gene expression and cell atlas of the
+developing human heart. Cell. 2019 Dec 12;179(7):1647-60.](https://www.spatialresearch.org)<br> - [Cao J, O’day DR, Pliner HA, Kingsley PD, Deng M, Daza RM, Zager MA, Aldinger KA, Blecher-Gonen R, Zhang F, Spielmann M. A human cell atlas of fetal gene expression. Science. 2020 Nov 13;370(6518):eaba7721.](https://descartes.brotmanbaty.org/bbi/human-gene-
+expression-during-development/)<br> - [Cui Y, Zheng Y, Liu X, Yan L, Fan X, Yong J, Hu Y, Dong JI, Li Q, Wu X, Gao S. Single-cell transcriptome analysis maps the developmental track of the human heart. Cell reports. 2019 Feb 12;26(7):1934-50.] (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106118)<br> - [Knight-Schrijver VR, Davaapil H, Bayraktar S, Ross AD, Kanemaru K, Cranley J,Dabrowska M, Patel M, Polanski K, He X, Vallier L. A single-cell comparison of adult and fetal human epicardium defines the age-associated changes in
+epicardial activity. Nature Cardiovascular Research. 2022 Dec;1(12):1215-29.](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216019)                |
 ----------------------------------------------------------
 
 
