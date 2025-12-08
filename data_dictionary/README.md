@@ -11,7 +11,7 @@ This set of data are sourced from the  NCI Molecular Targets Project [(MTP)](htt
 - `Single-cell data` 
 
 
-Note: All Kids First data were processed in [Cavatica](https://cavatica.sbgenomics.com/) with the Kids First DRC GATK [pipelines](https://github.com/kids-first), and all processed data were downloaded in mid-2025 (pre-DRAGEN pipelines).
+Note: All Kids First data were processed in [Cavatica](https://cavatica.sbgenomics.com/) with the Kids First DRC GATK [pipelines](https://github.com/kids-first), and all processed data were downloaded no later than mid-2025 (pre-DRAGEN pipelines).
 
 
 ## Germline and Somatic Variants Datasets
