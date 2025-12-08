@@ -3,7 +3,7 @@ This data dictionary contains descriptions on data added to a branch of the Comm
 
 
 
-This set of data are sourced from the  NCI Molecular Targets Project [(MTP)](https://moleculartargets.ccdi.cancer.gov/) and includes pediatric tumor and germline data from the Kids First Data Resource Center [(DRC)](https://kidsfirstdrc.org/).  The data's primary pipelines (alignment, variant calling) were run at the Kids First DRC and were further processed and analyzed with the OpenPedCan project now hosted at CNH [OpenPedCan-GitHub](https://github.com/rokitalab/OpenPedCan-Project-CNH). The single-cell data was sourced differently, as it comes from published single-cell sources.   Taken together, there are four types of data that have been added into the 2025AB release of the DDKG from the MTP:
+This set of data are sourced from the  NCI Molecular Targets Project [(MTP)](https://moleculartargets.ccdi.cancer.gov/) and includes pediatric tumor and germline data from the Kids First Data Resource Center [(DRC)](https://kidsfirstdrc.org/).  The data's primary pipelines (alignment, variant calling) were run at the Kids First DRC and were further processed and analyzed with the OpenPedCan project now hosted at CNH [OpenPedCan-GitHub](https://github.com/rokitalab/OpenPedCan-Project-CNH). The single-cell data was sourced from published literature sources.   Taken together, there are four types of data that have been added into the 2025AB release of the DDKG from the MTP:
 
 - `Germline variants`  
 - `Somatic variants`  
