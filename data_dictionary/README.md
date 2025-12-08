@@ -1,11 +1,10 @@
 # Data Dictionary for the Childhood Cancer and Structural Birth Defects datasets
-This data dictionary contains descriptions about data sets that have been added to the Data Distillery graph (DDKG), which can be found [here](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md). We have 4 types of data that we've added on top of the DDKG: 
+This data dictionary contains descriptions on data added to a branch of the Common Fund Data Ecosystem's Data Distillery Knowledge Graph (DDKG)[2025 AB version](https://github.com/nih-cfde/data-distillery/blob/main/DataDistillery29August2025/DD_29August2025_data_dictionary.md).  This set of data are sourced from the  NCI Molecular Targets Project [(MTP)](https://moleculartargets.ccdi.cancer.gov/).  The data was processed and analyzed with the OpenPedCan project now hosted at CNH [OpenPedCan-GitHub](https://github.com/rokitalab/OpenPedCan-Project-CNH).   Four types of data have been added into the 2025AB release of the DDKG from the MTP:
+
 - `Germline variants`  
 - `Somatic variants`  
-- `Molecular Targets Program (MTP) Tumor Expression data`  
-- `Single-Cell data` 
-
-
+- `Tumor Expression data`  
+- `Single-cell data` 
 
 
 ## Germline and Somatic Variants Datasets
