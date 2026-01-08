@@ -60,6 +60,7 @@ return * LIMIT 1
 | Entity               | Node SAB   |   KFGLCHD |   KFGLNBL |   KFGLTALL |   KFGLGNINT |   KFGLRSBD |   KFGLMMC |
 |:---------------------|:-----------|----------:|----------:|-----------:|------------:|-----------:|----------:|
 | Variant              | HGVSG      |      2084 |      4232 |       5478 |        4323 |        827 |       137 |
+| Patient              | PATIENT    |       590 |       454 |       1301 |        1253 |        184 |        38 |
 | Cohort               | COHORT     |         1 |         1 |          1 |           1 |          1 |         1 |
 | Gene                 | ENSEMBL    |      1359 |      1900 |       2563 |        2166 |        641 |       123 |
 | Transcript           | ENSEMBL    |      1359 |      1899 |       2563 |        2168 |        641 |       123 |
@@ -73,6 +74,7 @@ return * LIMIT 1
 | COHORT        | cohort_has_variant                     | HGVSG        |      2084 |      4232 |       5478 |        4323 |        827 |       137 |
 | ENSEMBL       | gene_has_variant                       | HGVSG        |     13813 |     27052 |      35716 |       28906 |       5380 |       921 |
 | POPULATION    | has_population_frequency               | HGVSG        |      8638 |      6706 |      18207 |       17689 |       2247 |       539 |
+| PATIENT       | patient_has_variant                    | HGVSG        |      2084 |      3513 |       5253 |        4323 |        827 |       137 |
 | HGVSG         | transcript_has_variant_impact_autogvp  | ENSEMBL      |      2084 |      4235 |       5478 |        4323 |        827 |       137 |
 | HGVSG         | transcript_has_variant_impact_polyphen | ENSEMBL      |       677 |       584 |       1458 |        1439 |        305 |        55 |
 | HGVSG         | transcript_has_variant_impact_sift     | ENSEMBL      |       672 |       578 |       1446 |        1430 |        301 |        55 |
